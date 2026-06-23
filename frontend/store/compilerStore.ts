@@ -320,13 +320,13 @@ export const useCompilerStore = create<CompilerState>()(
           const res = await response.json();
           if (res.success && res.data) {
             const data = res.data;
-            const initialStages = {
-              intent: { id: "intent" as const, label: "Intent Extraction", description: "Parse natural language into structured intent", status: "idle" as const },
-              design: { id: "design" as const, label: "System Design", description: "Generate architecture and component graph", status: "idle" as const },
-              schema: { id: "schema" as const, label: "Schema Generation", description: "Produce UI, API, DB, and Auth schemas", status: "idle" as const },
-              validation: { id: "validation" as const, label: "Validation", description: "Cross-layer validation and constraint checks", status: "idle" as const },
-              repair: { id: "repair" as const, label: "Repair Engine", description: "Auto-fix schema errors and mismatches", status: "idle" as const },
-              runtime: { id: "runtime" as const, label: "Runtime", description: "Execute and generate the application files", status: "idle" as const },
+            const initialStages: Record<PipelineStageId, PipelineStage> = {
+              intent: { id: "intent", label: "Intent Extraction", description: "Parse natural language into structured intent", status: "idle" },
+              design: { id: "design", label: "System Design", description: "Generate architecture and component graph", status: "idle" },
+              schema: { id: "schema", label: "Schema Generation", description: "Produce UI, API, DB, and Auth schemas", status: "idle" },
+              validation: { id: "validation", label: "Validation", description: "Cross-layer validation and constraint checks", status: "idle" },
+              repair: { id: "repair", label: "Repair Engine", description: "Auto-fix schema errors and mismatches", status: "idle" },
+              runtime: { id: "runtime", label: "Runtime", description: "Execute and generate the application files", status: "idle" },
             };
 
             const stages = { ...initialStages };
