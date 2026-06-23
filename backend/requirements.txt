@@ -1,0 +1,38 @@
+# FastAPI core
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# Pydantic & settings
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# SQLAlchemy async + PostgreSQL
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# LangChain + LLM providers
+langchain==0.3.11
+langchain-core==0.3.24
+langchain-openai==0.2.12
+langchain-google-genai==2.0.7
+langgraph==0.2.56
+
+# OpenAI / Google SDKs
+openai==1.57.4
+google-generativeai==0.8.3
+
+# Utilities
+python-dotenv==1.0.1
+httpx==0.28.1
+tenacity==9.0.0
+structlog==24.4.0
+
+# Dev / testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1
+
+# Reporting
+fpdf2==2.7.9
