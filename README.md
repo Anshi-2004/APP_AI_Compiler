@@ -6,6 +6,14 @@ Rather than generating code in a single "black-box" prompt, CompilerAI uses an i
 
 ---
 
+## 🌐 Live Demo
+
+> **Deployed on Vercel** — Try it out without any local setup!
+
+🔗 **[https://app-ai-compiler-bcsie3jf3-anshi-2004s-projects.vercel.app/](https://app-ai-compiler-bcsie3jf3-anshi-2004s-projects.vercel.app/)**
+
+---
+
 ## 🏗️ 6-Stage Compilation Pipeline
 
 The core compiler orchestrator manages the lifecycle of the prompt, streaming progression status in real-time to the UI via Server-Sent Events (SSE).
